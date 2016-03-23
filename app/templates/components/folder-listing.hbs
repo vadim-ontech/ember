@@ -1,0 +1,12 @@
+  <li>
+  <a href="#" {{action "loadPass"}}>{{rental.title}}</a>
+  {{#if rental.child }}
+
+  	<ul>
+  	{{#each rental.child as |rentalUnit|}}
+	  {{folder-listing rental=rentalUnit}}
+	{{/each}}
+	</ul>
+  {{/if}}
+  </li>
+  

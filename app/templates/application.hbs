@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
+<ul>
+{{#each model as |rentalUnit|}}
+  {{folder-listing rental=rentalUnit}}
+{{/each}}
+</ul>
 
 {{outlet}}
